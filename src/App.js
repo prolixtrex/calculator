@@ -5,7 +5,7 @@ import Keys from "./Keys";
 import { theme1, theme2, theme3 } from "./themes";
 
 function App() {
-  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("Theme")));
+  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("Theme")) || theme1);
   const [display, setDisplay] = useState(0);
 
   return (
